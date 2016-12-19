@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/jquery.lazyload.js" ></script>
+		<script src="../js/index.js"></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+	</head>
+	
+	<body>
+		<!-------------------------wrap-------------------------------------------->
+		<div class="covers">
+			<div class="city-select">
+				<div class="consign">
+					<span>请选择您的收货城市</span>
+					<a href="javascript:;"></a>
+				</div>
+				
+				<div class="score">
+					<span>沱沱工社32城生鲜配区域</span>
+					<a href="javascript:;">选择全国其它城市</a>
+				</div>
+				<div>
+					<ul class="inland block"></ul>
+					<div class="others">
+					<!--	<p><span>商品送至：</span><input type="text"/><a href="index.html">开始购物</a></p>-->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="top">
+				<div class="t-left">
+					<span class="t-text">欢迎光临沱沱工社!</span>
+					<a class="t-register" href="login.html">登陆</a>
+					<a class="t-login" href="register.html">注册</a>
+					<span class="t-to">送货至：</span>
+					<i class="city">北京：东城区</i>
+				</div>
+				<div class="t-right">
+					<span>English</span>
+					<span>手机沱沱</span>
+					<span>我的沱沱</span>
+					<span>充值</span>
+					<span style="background:0;">提货</span>
+				</div>
+			</div>
+		</div>
+	
+		<!-------------------------ads-------------------------------------------->
+		<div class="wrap-ads">
+			<div class="ads">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+		<script>
+			//延迟3秒让广告条显示
+			setTimeout(function(){
+				$(".ads").slideDown();
+			},3000);
+			//点击关闭按钮，让广告条向上消失
+			$(".ads a").click(function(){
+				$(this).parent().slideUp();
+			})		
+		</script>
+		<!-------------------------header-------------------------------------------->
+		<div class="header">
+			<div class="h-left">
+				<h1 class="h-name"><a href="">沱沱工社</a></h1>
+				<a  class="h-collect" href="">孕妈收藏</a>
+			</div>
+			<div class="search">
+				<form method="get" action="">
+					<input class="s-text" type="text" placeholder="原浆橄榄油"/>
+					<input class="s-button" type="button"value="搜索"/>
+				</form>
+				<div class="s-hot">
+					<strong>热门搜索：</strong>
+					<span>农场蔬菜</span>
+					<span>鸡蛋</span>
+					<span>奇异果</span>
+					<span>燕窝</span>
+					<span>特色蔬菜</span>
+					<span>衣物清洁</span>
+				</div>
+			</div>
+			<div class="h-right">
+				<span class="icon1"></span>
+				<span class="icon1"></span>
+				<span class="icon1"></span>
+			</div>
+		</div>
+		<!-------------------------nav-------------------------------------------->
+		<ul class="nav">
+			<li class="allclassed">全部商品分类</li>
+			<li>首页</li>
+			<li class="group">沱沱团<span>包邮</span></li>
+			<li>沱沱礼品</li>
+			<li class="card">宅配卡<span>Hot</span></li>
+			<li>沱沱农场</li>
+			<li>入驻沱沱</li>
+			<ul class="list-classed">
+				<li><a href="list.html"><span></span>有机食品</a></li>
+				<li><a href="list.html"><span class="span2"></span>蔬菜水果</a></li>
+				<li><a href="list.html"><span class="span3"></span>肉类禽蛋</a></li>
+				<li><a href="list.html"><span class="span4"></span>海鲜水产</a></li>
+				<li><a href="list.html"><span class="span5"></span>奶类/烘焙</a></li>
+				<li><a href="list.html"><span class="span6"></span>肉类禽蛋</a></li>
+				<li><a href="list.html"><span class="span7"></span>休食冲饮</a></li>
+				<li style="height:43px;"><a style="border:0;" href="html/list.html"><span class="span8"></span>生态日用</a></li>
+			</ul>
+			
+			<div class="menu-box">
+				<ul class="menu menu-visib">
+					<li><span>有机蔬菜水果</span><a href="list.html">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>有机肉禽蛋奶</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+					<li><span>有机粮油副食</span><a href="">有机米/面/杂粮</a><a href="">有机水果</a></li>
+					<li><span>有机休食冲饮</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>蔬菜类</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>水果类</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>牛羊肉</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>猪肉</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>鱼/虾</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>参/贝</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>奶制品</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>烘焙/面点</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>米/面/杂粮</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>干货</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>冲调品</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>休食类</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>环保纸</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>健康家纺</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+			</div>
+			<div class="nav-ads"><img src="../img/0cab19d80ae8077d59a34d81a092a589.jpg"/></div>
+		</ul>
+		<!-----------------------banner----------------------------------------->
+		<div class="banner">
+			<div class="screen">
+				<ul class="pic">
+					<li style="z-index:10;background:url(../img/banner1.jpg) no-repeat center;"></li>
+					<li style="background:url(../img/banner2.jpg) no-repeat center;"></li>
+					<li style="background:url(../img/banner3.jpg) no-repeat center;"></li>
+					<li style="background:url(../img/banner4.jpg) no-repeat center;"></li>
+					<li style="background:url(../img/banner5.jpg) no-repeat center;"></li>
+					<li style="background:url(../img/banner6.jpg) no-repeat center;"></li>
+					<li style="background:url(../img/banner8.jpg) no-repeat center;"></li>
+					<li style="background:url(../img/banner9.jpg) no-repeat center;"></li>
+				</ul>
+				<ul class="num">
+					<li class="ones">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+				</ul>
+				
+				<div class="pre"></div>
+				<div class="next"></div>
+				
+				
+			</div>
+			
+		</div>
+		<!-------------------------selected-------------------------------------------->
+		<div class="selected">
+			<span class="sel-pre"></span>
+			<div class="sel-center">
+				<div class="sel-screen">
+					<ul class="sel1">
+						<li><img src="../img/a0b40421947db14f857e24969a4b5280.jpg" /></li>
+						<li><img src="../img/da700f70a7e28e69f19cbc957abae946.jpg" /></li>
+						<li><img src="../img/178f3ac12085614738bd34bb3a20d293.jpg" /></li>
+						<li style="width:275px;"><img src="../img/8108c1e13963e5ed83728b74a31a54c9.jpg"></li>				
+					</ul>
+					<ul class="sel2">
+						<li><img src="../img/621cee0d14a8436c6a5bf457009ffd35.jpg" /></li>
+						<li><img src="../img/a36a11ce3faaf432ec8fae7073c58c5a.jpg" /></li>
+						<li><img src="../img/7227db5288ba280341c03e2db669cbc6.jpg" /></li>
+						<li style="width:275px;"><img src="../img/c8038c44cf66ee94acdb90630e7de1b8.jpg"/></li>				
+					</ul>
+				</div>
+			</div>
+			<span class="sel-next" style="border-left:1px solid #e6e6e6"></span>
+		</div>
+	
+		<!-------------------------hot-------------------------------------------->
+		<div class="hot">
+			<ul class="hot-nav">
+				<li class="hot-select">沱沱力荐</li>
+				<li>超值热卖</li>
+			</ul>
+			<div class="hot-contain">
+				<div class="hot-foot1">
+					<dl>
+						<dt><img src="../img/20150529174737129_250.jpg"/></dt>
+						<dd>
+							<a href="">山东富士苹果 5kg/箱</a>
+							<span>新果上市，脆甜多汁</span>
+							<strong>￥55.00</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/207507541_250.jpg"/></dt>
+						<dd>
+							<a href="">翠香猕猴桃24-27枚/箱 约2.2-2.5kg/箱</a>
+							<span>果肉细嫩 水润清甜</span>
+							<strong>￥58.00</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/20140227133802809_250.jpg"/></dt>
+						<dd>
+							<a href="">冷鲜肉—添康生态有机去骨后肘 350g/盒</a>
+							<span>有机养殖，味香营养</span>
+							<strong>￥59.80</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/201606161719255_250.jpg"/></dt>
+						<dd>
+							<a href="">易盛玖灰芦花▪鸡翅中1000g/袋</a>
+							<span>散养、味道香</span>
+							<strong>￥52.80</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/20560027561_250.jpg"/></dt>
+						<dd>
+							<a href="">Vanoni‘s厄瓜多尔白虾40-50头 约2kg/盒（原装进口）</a>
+							<span>虾肉鲜甜、紧实</span>
+							<strong>￥158.00</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/2753_250 (1).jpg"/></dt>
+						<dd>
+							<a href="">张小渔 带鱼段（7/9）1000g/袋</a>
+							<span>东海带鱼 肉质细嫩鲜美</span>
+							<strong>￥59.00</strong>
+						</dd>
+					</dl>
+				</div>
+				<div class="hot-foot1 hot-foot2">
+					<dl>
+						<dt><img src="../img/3048_250.jpg"/></d>
+						<dd>
+							<a href="">国产青芒 约1kg/盒</a>
+							<span>果香浓郁 香甜可口</span>
+							<strong>￥29.90</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/2212_250.jpg"/></dt>
+						<dd>
+							<a href="">怀柔鲜板栗 约3斤/箱</a>
+							<span>果肉金黄 软糯甘甜</span>
+							<strong>￥55.00</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/20160318172819774_250.jpg"/></dt>
+						<dd>
+							<a href="">乌拉圭进口（无骨）牛肋条 约1kg/袋</a>
+							<span>天然草饲，鲜嫩浓香</span>
+							<strong>￥68.00</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/20160715100539448_250.jpg"/></dt>
+						<dd>
+							<a href="">亚洲刺身龙蚝6只装 950克/盒</a>
+							<span>亚洲龙蚝，肉质鲜嫩滑爽，解冻</span>
+							<strong>￥86.00</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/2014034091447223_250.jpg"/></dt>
+						<dd>
+							<a href="">百年栗园北京油鸡母鸡 750g/袋</a>
+							<span>林地散养、原粮喂养、地道北京</span>
+							<strong>￥69.80</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/20150130110157127_250.jpg"/></dt>
+						<dd>
+							<a href="">【沱沱工社】淳食黑木耳 120g/袋</a>
+							<span>肉质细腻 脆滑爽口</span>
+							<strong>￥29.90</strong>
+						</dd>
+					</dl>
+				</div>
+			</div>	
+		</div>
+		<script>
+		//选项卡
+			$(".hot-nav li").mouseover(function(){
+				$(this).addClass("hot-select").siblings().removeClass("hot-select");
+				$(".hot-contain>div").eq($(this).index()).css('display','block').siblings().css('display','none');	
+			})
+			
+			
+		</script>
+		<!-------------------------innerads-------------------------------------------->
+		<div class="innerads">
+			<a href=""><img src="../img/fbe96dbd880bd28b45731691f1d86d74.jpg"/></a>
+			<a href=""style="width:460px;"><img src="../img/8d1e2593d3ce2f4c050f9d098c86e1ef.jpg"</a>
+			<a href=""><img src="../img/d7c44de452e01946e0ae065f49f0c2e3.jpg"/></a>
+		</div>
+		<!-------------------------vegetables-------------------------------------------->
+		<div class="vegetables">
+			<div class="veg-nav">
+				<span>蔬菜水果</span>
+				<ul class="veg-list">
+					<li class="select0">特惠专区</li>
+					<li>有机蔬菜</li>
+					<li>国产水果</li>
+					<li>进口水果</li>
+				</ul>
+			</div>
+			<div class="veg-content">
+				<div class="veg-left"></div>
+				<div class="veg-right">
+					<div>
+						<div class="veg-favor">
+							<dl class="classfity"></dl>
+							<dl class="two">
+								<a href=""><img src="../img/512335b3e7ce18d136c501f3093a7bae.jpg"/></a>
+							</dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+						</div>
+						
+						<div class="veg-rec">
+							<ul class="rec-top">
+								<li>
+									<div class="list-div"><span>1</span>有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>2</span>2鲜百香果 4个/盒 约260g 又称西番莲、情人果广告</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/2687_250.jpg"/></dt>
+										<dd>
+											<a href="">2鲜百香果 4个/盒 约260g 又称西番莲、情人果广告</a>
+											<strong>￥18.80/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>3</span>台湾文旦柚 约450g/个</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/2178_250.jpg"/></dt>
+										<dd>
+											<a href="">台湾文旦柚 约450g/个</a>
+											<strong>￥19.90/个</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>4</span>【沱沱工社】有机胡萝卜 约500g/份</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20520927600_250.jpg"/></dt>
+										<dd>
+											<a href="">【沱沱工社】有机胡萝卜 约500g/份</a>
+											<strong>￥18.80/份</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>5</span>新西兰红玫瑰苹果 2个/盒 约400g/盒</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20140623155647937_250.jpg"/></dt>
+										<dd>
+											<a href="">新西兰红玫瑰苹果 2个/盒 约400g/盒</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="rec-bottom">
+								<a href=""></a>
+							</div>
+						</div>
+						
+					</div>
+					<div  class="organic"></div>
+					<div class="domestic"></div>
+					<div class="import"></div>
+		
+				</div>
+			</div>
+		</div>
+		<!-------------------------meat-------------------------------------------->
+		<div class="vegetables">
+			<div class="veg-nav meat-nav ">
+				<span>肉类禽蛋</span>
+				<ul class="veg-list">
+					<li class="select1">特惠专区</li>
+					<li>禽蛋</li>
+					<li>肉类</li>
+					<li>冷冻冷藏</li>
+				</ul>
+			</div>
+			<div class="veg-content">
+				<div class="veg-left"></div>
+				<div class="veg-right">
+					<div>
+						<div class="veg-favor">
+							<dl class="classfity"></dl>
+							<dl class="two">
+								<a href=""><img src="../img/2258cd55a5ed67f905227f8efc1dd92e.jpg"/></a>
+							</dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+						</div>
+						
+						<div class="veg-rec">
+							<ul class="rec-top">
+								<li>
+									<div class="list-div"><span>1</span>有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>2</span>西州蜜瓜(哈密瓜) 约0.95</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>3</span>新疆库尔勒香梨 约1kg/份</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>4</span>【沱沱工社】有机长茄子</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>5</span>进口菠萝 约1kg/个</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="rec-bottom">
+								<a href=""></a>
+							</div>
+						</div>
+					</div>
+					<div  class="eggs"></div>
+						
+					<div class="meats"></div>
+					
+					<div class="fozens"></div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------seafood-------------------------------------------->
+		<div class="vegetables">
+			<div class="veg-nav sea-nav">
+				<span>海鲜水产</span>
+				<ul class="veg-list">
+					<li class="select2">特惠专区</li>
+					<li>鱼类</li>
+					<li>虾类</li>
+					<li>蟹/贝</li>
+				</ul>
+			</div>
+			<div class="veg-content">
+				<div class="veg-left"></div>
+				<div class="veg-right">
+					<div>
+						<div class="veg-favor">
+							<dl class="classfity"></dl>
+							<dl class="two">
+								<a href=""><img src="../img/cd69a3f208c5b9b5f189a146421c7b02.jpg"/></a>
+							</dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+						</div>
+						
+						<div class="veg-rec">
+							<ul class="rec-top">
+								<li>
+									<div class="list-div"><span>1</span>有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>2</span>西州蜜瓜(哈密瓜) 约0.95</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>3</span>新疆库尔勒香梨 约1kg/份</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>4</span>【沱沱工社】有机长茄子</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>5</span>进口菠萝 约1kg/个</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="rec-bottom">
+								<a href=""></a>
+							</div>
+						</div>
+					</div>
+					<div  class="fishs"></div>
+						
+					<div class="shrimp"></div>
+					
+					<div class="crab"></div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------milk-------------------------------------------->
+		<div class="vegetables">
+			<div class="veg-nav milk-nav ">
+				<span>奶类烘焙</span>
+				<ul class="veg-list">
+					<li class="select3">特惠专区</li>
+					<li>奶类烘焙</li>
+				</ul>
+			</div>
+			<div class="veg-content">
+				<div class="veg-left"></div>
+				<div class="veg-right">
+					<div>
+						<div class="veg-favor">
+							<dl class="classfity"></dl>
+							<dl class="two">
+								<a href=""><img src="../img/d1b86ee7d09b417f724b09893fcecd31.jpg"/></a>
+							</dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+						</div>
+						
+						<div class="veg-rec">
+							<ul class="rec-top">
+								<li>
+									<div class="list-div"><span>1</span>有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>2</span>西州蜜瓜(哈密瓜) 约0.95</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>3</span>新疆库尔勒香梨 约1kg/份</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>4</span>【沱沱工社】有机长茄子</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>5</span>进口菠萝 约1kg/个</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="rec-bottom">
+								<a href=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="cure"></div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------grain-------------------------------------------->
+		<div class="vegetables">
+			<div class="veg-nav grain-nav">
+				<span>粮油副食</span>
+				<ul class="veg-list">
+					<li class="select4">特惠专区</li>
+					<li>米面油</li>
+					<li>杂粮</li>
+					<li>干货调味</li>
+				</ul>
+			</div>
+			<div class="veg-content">
+				<div class="veg-left"></div>
+				<div class="veg-right">
+					<div>
+						<div class="veg-favor">
+							<dl class="classfity"></dl>
+							<dl class="two">
+								<a href=""><img src="../img/1f7193d1bdaf68f18cd54bbdfab30d4f.jpg"/></a>
+							</dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+						</div>
+						
+						<div class="veg-rec">
+							<ul class="rec-top">
+								<li>
+									<div class="list-div"><span>1</span>有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>2</span>西州蜜瓜(哈密瓜) 约0.95</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>3</span>新疆库尔勒香梨 约1kg/份</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>4</span>【沱沱工社】有机长茄子</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>5</span>进口菠萝 约1kg/个</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="rec-bottom">
+								<a href=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="rice"></div>
+					<div class="cereal"></div>
+					<div class="flavor"></div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------snacks-------------------------------------------->
+		<div class="vegetables">
+			<div class="veg-nav snacks-nav">
+				<span>休食冲饮</span>
+				<ul class="veg-list">
+					<li class="select5">特惠专区</li>
+					<li>休闲食品</li>
+				</ul>
+			</div>
+			<div class="veg-content">
+				<div class="veg-left"></div>
+				<div class="veg-right">
+					<div>
+						<div class="veg-favor">
+							<dl class="classfity"></dl>
+							<dl class="two">
+								<a href=""><img src="../img/8334e365c92ce31c718e9d8359cbe184.jpg"/></a>
+							</dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+						</div>
+						
+						<div class="veg-rec">
+							<ul class="rec-top">
+								<li>
+									<div class="list-div"><span>1</span>有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>2</span>西州蜜瓜(哈密瓜) 约0.95</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>3</span>新疆库尔勒香梨 约1kg/份</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>4</span>【沱沱工社】有机长茄子</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>5</span>进口菠萝 约1kg/个</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="rec-bottom">
+								<a href=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="sock"></div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------daily-------------------------------------------->
+		<div class="vegetables">
+			<div class="veg-nav daily-nav">
+				<span>生态日用</span>
+				<ul class="veg-list">
+					<li class="select6">特惠专区</li>
+					<li>健康家纺</li>
+					<li>清洁用品</li>
+					<li>天然美护</li>
+				</ul>
+			</div>
+			<div class="veg-content">
+				<div class="veg-left"></div>
+				<div class="veg-right">
+					<div>
+						<div class="veg-favor">
+							<dl class="classfity"></dl>
+							<dl class="two">
+								<a href=""><img src="../img/3e8bcfe81dc038e663bb1c4f4ad8f038.jpg"/></a>
+							</dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+							<dl class="classfity"></dl>
+						</div>
+						
+						<div class="veg-rec">
+							<ul class="rec-top">
+								<li>
+									<div class="list-div"><span>1</span>有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>2</span>西州蜜瓜(哈密瓜) 约0.95</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<div class="list-div"><span>3</span>新疆库尔勒香梨 约1kg/份</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>4</span>【沱沱工社】有机长茄子</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+								<li><div class="list-div"><span>5</span>进口菠萝 约1kg/个</div>
+									<dl class="li-con list-hidden">
+										<dt><img src="../img/20500256602_250.jpg"/></dt>
+										<dd>
+											<a href="">有机怀山堂铁棍山药（垆土） 1.5kg/箱 长度为38cm 左右</a>
+											<strong>￥58:00/盒</strong>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="rec-bottom">
+								<a href=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="weave"></div>
+					<div class="clean"></div>
+					<div class="natural"></div>	
+				</div>
+			</div>
+		</div>
+		<!------------------------------bottom-------------------------------->
+		<div class="bottom"></div>
+		<script>
+			$(".bottom").load("common.html .bottom");
+		</script>
+		<!--------------------------------links-------------------------------->
+		<div class="links">
+			<div class="severse">
+				<ul>
+					<li class="font-style">食品安全</li>
+					<li>自营沱沱有机农场</li>
+					<li>沱沱公社采购标准</li>
+					<li>透明社区经营理念</li>
+					<li>我们的资质</li>
+				</ul>
+				<ul>
+					<li class="font-style">新手教程</li>
+					<li>购物流程</li>
+					<li>注册登陆</li>
+					<li>账户充值</li>
+					<li>如何提货</li>
+					<li>会员政策</li>
+					
+				</ul>
+				<ul>
+					<li class="font-style">配送方式</li>
+					<li>配送范围</li>
+					<li>运费标准</li>
+					
+				</ul>
+				<ul>
+					<li class="font-style">支付方式</li>
+					<li>在线支付</li>
+					<li>账户余额支付</li>
+					<li>多种福利卡</li>
+					
+				</ul>
+				<ul>
+					<li class="font-style">售后服务</li>
+					<li>退换货政策</li>
+					<li>退换货流程</li>
+					<li>退款</li>
+					<li>投诉建议</li>
+				</ul>
+				<ul>
+					<li class="font-style">帮助信息</li>
+					<li>安全食品采购指南</li>
+					<li>常见问题</li>
+					<li>电子优惠券的使用</li>
+					<li>礼品卡</li>
+				</ul>
+				<div class="download">
+					<span>客户端下载</span>
+					<img src="../img/down_m.png"/>
+					<p></p>
+				</div>
+				<div class="download action">
+					<span>关注沱沱微信</span>
+					<img src="../img/weixian_er.png"/>
+					<p></p>
+				</div>
+			</div>
+			<div class="about"></div>
+		</div>
+		<!----------------------------加载about元素-->
+		<script>
+			$(".about").load("common.html #about");
+		</script>
+		<!-------------------------------------------------floor------------------------------------>
+		<ul class="floor">
+			<li><a class="floor1" href="shopcart.html">购物车<span></span></a></li>
+			<li><a class="floor2" href="">提货</a></li>
+			<li><a class="floor3" style="height:37px;padding-top:33px;" href="">礼品卡<br/>充值</a></li>
+			<li><a class="floor4" href="">问题反馈</a></li>
+			<li><a class="floor5" href="">在线客服</a></li>
+			<li><a class="floor6" style="height:36px;padding:0" href="javascript:;"></a></li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/shopcart.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/shopcart.js" ></script>
+	</head>
+	<body>
+		<!-------------------------------shop-top------------------------------>
+		<div class="shop-top">
+			<div class="shop-left">
+				<h1 class="shop-tuo"><a href="index.html">沱沱工社</a></h1>
+				<span  class="shop-name">我的购物车</span>
+			</div>
+			<div class="shop-right">
+				<div class="step1">
+					<p>我的购物车</p>
+				</div>
+				<div class="step2">
+					<p>确认订单</p>
+				</div>
+				<div class="step3">
+					<p>成功提交订单</p>
+				</div>
+				<div class="step4">
+					<p>支付成功</p>
+				</div>
+			</div>
+		</div>
+		<ul class="shop-nav">
+			<li>北京站</li>
+		</ul>
+		<div class="shop-s">
+			<div class="shop-state">说明：促销优惠和运费按同一订单计算，分开提交的订单则会重新计算促销优惠和运费！</div>
+		</div>
+		<!---------------------------shop-content------------------------------------>
+		<div class="shop-content">
+			<div class="shop-info">
+				<p><span>商品送至：</span><i></i><strong>选择配送区域，查看商品是否可送达</strong></p>
+				<div class="info-title">
+					<span class="info-select all-select"><input type="checkbox" checked="true"/></span>
+					<span class="info-name">商品名称</span>
+					<span  class="info-status">库存状态</span>
+					<span  class="info-price">沱沱价</span>
+					<span class="info-count">数量</span>
+					<span  class="info-value">金额</span>
+					<span class="info-del">操作</span>
+				</div>
+				<div class="info-goods"></div>
+				
+			</div>
+			<div class="total-prices">
+				<div class="total-left">
+					<a href="javascript:;">清空当前分站商品</a>
+					<span>
+						若您没挑选完商品，请
+						<a href="list.html"></a>
+					</span>
+				</div>
+				<div class="total-right">
+					商品金额(<span>￥ 00.00</span>) - 活动优惠(￥ 0.00)=商品总额(不含运费)<span>￥ 00.00</span>
+				</div>
+			</div>
+		</div>
+		
+		<!---------------------------------shop-count------------------------>
+		<div class="shop-count">
+			<button class="count-now">现在去结算</button>
+		</div>
+		<div class="shop-hidden">
+			<span>您的购物车暂时没有商品 ，<a href="list.html"> 现在去挑选商品 >></a></span>
+		</div>
+	</body>
+</html>

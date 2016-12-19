@@ -1,0 +1,124 @@
+
+	{
+		"otherslook":[
+						{	
+							"id":"001",
+							"img":"http://img02.ttmimg.com/CE/18/2504_160.jpg",
+							"price":"￥19.8",
+							"name":"孟宗有机压榨笋条 235g/袋"
+						},
+						{	
+							"id":"002",
+							"img":"http://img02.ttmimg.com/FF/7F/210306927_160.jpg",
+							"price":"￥6.80",
+							"name":"【沱沱联合农场】生态大葱 约"
+						},
+						{
+							"id":"003",
+							"img":"http://img02.ttmimg.com/4E/D5/20570130199_160.jpg",
+							"price":"￥8.80",
+							"name":"顺意生有机尖椒 约250g/份"
+						},
+						{	
+							"id":"004",
+							"img":"http://img02.ttmimg.com/88/63/2016075104528892_160.jpg",
+							"price":"￥8.80",
+							"name":"【沱沱联合农场】生态鲜虫草"
+						},
+						{	
+							"id":"005",
+							"img":"http://img02.ttmimg.com/E4/D1/210303758_160.jpg",
+							"price":"￥21.80",
+							"name":"【沱沱联合农场】有机圆白菜 约"
+						},
+						{	
+							"id":"006",
+							"img":"http://img02.ttmimg.com/A1/73/20140711181750436_160.jpg",
+							"price":"￥18.80",
+							"name":"【沱沱工社】有机秋黄瓜 黄瓜"
+						}
+						
+						
+		],
+		"othersbuy":[
+						{	
+							"id":"007",
+							"img":"http://img02.ttmimg.com/34/7D/20160414134757236_160.jpg",
+							"price":"￥16.8",
+							"name":"【沱沱联合农场】生态独头蒜 "
+						},
+						{	
+							"id":"008",
+							"img":"http://img02.ttmimg.com/7D/4A/20150817140931882_160.jpg",
+							"price":"￥13.80",
+							"name":"【沱沱工社】生态散白菜花 约"
+						},
+						{
+							"id":"009",
+							"img":"http://img02.ttmimg.com/98/ED/3121_160.jpg",
+							"price":"￥11.80",
+							"name":"【沱沱工社】有机白萝卜 约"
+						},
+						{	
+							"id":"0010",
+							"img":"http://img02.ttmimg.com/D2/4C/20150923115905821_160.jpg",
+							"price":"￥19.90",
+							"name":"福建有机白肉蜜柚 约1.2-1.5kg/"
+						},
+						{	
+							"id":"0011",
+							"img":"http://img02.ttmimg.com/D5/D0/20130828175105163_160.jpg",
+							"price":"￥198.00",
+							"name":"佳沛新西兰阳光金奇异果 30枚"
+						},
+						{
+							"id":"0012",
+							"img":"http://img02.ttmimg.com/BC/90/2232_160.jpg",
+							"price":"￥9.80",
+							"name":"顺意生有机青椒 约200g/份"
+						}
+						
+						
+		],
+		"otherslike":[
+						{
+							"id":"0013",
+							"img":"http://img02.ttmimg.com/BC/0C/2713_160.jpg",
+							"price":"￥9.80",
+							"name":"顺意生有机菠菜 约200g/份 "
+						},
+						{
+							"id":"0014",
+							"img":"http://img02.ttmimg.com/4A/B4/2668_160.jpg",
+							"price":"￥9.80",
+							"name":"【沱沱联合农场】生态荷兰豆 "
+						},
+						{
+							"id":"0015",
+							"img":"http://img02.ttmimg.com/B7/75/2730_160.jpg",
+							"price":"￥26.00",
+							"name":"【联合农场】有机红薯 3斤/箱"
+						},
+						{
+							"id":"0016",
+							"img":"http://img02.ttmimg.com/AE/9E/20140522173648950_160.jpg",
+							"price":"￥23.80",
+							"name":"【沱沱工社】有机尖椒 辣椒 约"
+						},
+						{
+							"id":"0017",
+							"img":"http://img02.ttmimg.com/59/7F/4010210196330004_160.jpg",
+							"price":"￥49.00",
+							"name":"悦海上品 舟山带鱼段750g/袋"
+						},
+						{
+							"id":"0018",
+							"img":"http://img02.ttmimg.com/9E/0F/2437_160.jpg",
+							"price":"￥22.90",
+							"name":"渔大师 阿拉斯加鳕鱼柳 300克/"
+						}
+						
+						
+		]
+	}
+

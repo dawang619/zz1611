@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" href="../css/veg.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script src="../js/veg.js"></script>
+	</head>
+	<body>
+		<!-------------------------wrap-------------------------------------------->
+		<div class="covers">
+			<div class="city-select">
+				<div class="consign">
+					<span>请选择您的收货城市</span>
+					<a href="javascript:;"></a>
+				</div>
+				
+				<div class="score">
+					<span>沱沱工社32城生鲜配区域</span>
+					<a href="javascript:;">选择全国其它城市</a>
+				</div>
+				<div>
+					<ul class="inland block"></ul>
+					<div class="others"></div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="top">
+				<div class="t-left">
+					<span class="t-text">欢迎光临沱沱工社!</span>
+					<a class="t-register" href="login.html">登陆</a>
+					<a class="t-login" href="register.html">注册</a>
+					<span class="t-to">送货至：</span>
+					<i class="city">北京：东城区</i>
+				</div>
+				<div class="t-right">
+					<span>English</span>
+					<span>手机沱沱</span>
+					<span>我的沱沱</span>
+					<span>充值</span>
+					<span style="background:0;">提货</span>
+				</div>
+			</div>
+		</div>
+		<!-------------------------header-------------------------------------------->
+		<div class="header">
+			<div class="h-left">
+				<h1 class="h-name"><a href="index.html">沱沱工社</a></h1>
+			</div>
+			<div class="search">
+				<form method="get" action="">
+					<input class="s-text" type="text" placeholder="原浆橄榄油"/>
+					<input class="s-button" type="button"value="搜索"/>
+				</form>
+				<div class="s-hot">
+					<strong>热门搜索：</strong>
+					<span>农场蔬菜</span>
+					<span>鸡蛋</span>
+					<span>奇异果</span>
+					<span>燕窝</span>
+					<span>特色蔬菜</span>
+					<span>衣物清洁</span>
+				</div>
+			</div>
+			<div class="h-right">
+				<span class="icon1"></span>
+				<span class="icon1"></span>
+				<span class="icon1"></span>
+			</div>
+		</div>
+		<!-------------------------nav-------------------------------------------->
+		<ul class="nav">
+			<li class="allclassed">全部商品分类</li>
+			<li>首页</li>
+			<li class="group">沱沱团<span>包邮</span></li>
+			<li>沱沱礼品</li>
+			<li class="card">宅配卡<span>Hot</span></li>
+			<li>沱沱农场</li>
+			<li>入驻沱沱</li>
+			<ul class="list-classed list-classed-hidden">
+				<li><a href="javascript:;"><span></span>有机食品</a></li>
+				<li><a href="javascript:;"><span class="span2"></span>蔬菜水果</a></li>
+				<li><a href="javascript:;"><span class="span3"></span>肉类禽蛋</a></li>
+				<li><a href="javascript:;"><span class="span4"></span>海鲜水产</a></li>
+				<li><a href="javascript:;"><span class="span5"></span>奶类/烘焙</a></li>
+				<li><a href="javascript:;"><span class="span6"></span>肉类禽蛋</a></li>
+				<li><a href="javascript:;"><span class="span7"></span>休食冲饮</a></li>
+				<li style="height:43px;"><a style="border:0;" href="javascript:;"><span class="span8"></span>生态日用</a></li>
+			</ul>
+			
+			<div class="menu-box ">
+				<ul class="menu menu-visib">
+					<li><span>有机蔬菜水果</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>有机肉禽蛋奶</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+					<li><span>有机粮油副食</span><a href="">有机米/面/杂粮</a><a href="">有机水果</a></li>
+					<li><span>有机休食冲饮</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>蔬菜类</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>水果类</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>牛羊肉</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>猪肉</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>鱼/虾</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>参/贝</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>奶制品</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>烘焙/面点</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>米/面/杂粮</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>干货</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>冲调品</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>休食类</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+				<ul class="menu">
+					<li><span>环保纸</span><a href="">有机蔬菜</a><a href="">有机水果</a></li>
+					<li><span>健康家纺</span><a href="">有机奶</a><a href="">有机蛋类</a><a href="">有机猪肉</a><a href="">有机牛羊肉</a><a style="padding-left:85px;" href="">有机禽类</a></li>
+				</ul>
+			</div>
+			
+		</ul>
+		<!------------------------veg-depend-------------------------->
+		<div class="veg-depend">
+			<p>
+				<a href="">全部分类</a>&gt;
+				<a href="">蔬菜水果</a>&gt;
+				<a href="">蔬菜类</a>&gt;
+				<a href="">有机蔬菜</a>&gt;
+				<span>【沱沱工社】 有机迷你冬瓜 约1000-1500g/份</span>
+			</p>
+		</div>
+		<div class="veg-kinds">
+			<div class="veg-kinds-left">
+				<div class="veg-small">
+					<ul class="vegs-img">
+						<li><img src="../img/2014051180236873(398).jpg"/></li>
+						<li><img src="../img/2014074101712628(398).jpg"/></li>
+						<li><img src="../img/2014074101724180(398).jpg"/></li>
+						<li><img src="../img/2014074101748511(398).jpg"/></li>
+						<li><img src="../img/2014074101735948(398).jpg"/></li>
+					</ul>
+					<div class="mask"></div>
+					
+				</div>
+				
+				<ul class="vegb-img">
+					<li><img src="../img/2014051180236873.jpg"/></li>
+					<li><img src="../img/2014074101712628.jpg"/></li>
+					<li><img src="../img/2014074101724180.jpg"/></li>
+					<li><img src="../img/2014074101748511.jpg"/></li>
+					<li><img src="../img/2014074101735948.jpg"/></li>
+				</ul>
+				
+				<ul class="veg-small-list">
+					<li><img src="../img/2014051180236873_50.jpg"/></li>
+					<li><img src="../img/2014074101712628_50.jpg"/></li>
+					<li><img src="../img/2014074101724180_50.jpg"/></li>
+					<li><img src="../img/2014074101748511_50.jpg"/></li>
+					<li><img src="../img/2014074101735948_50.jpg"/></li>
+				</ul>
+				
+			</div>
+			<div class="veg-kinds-con">
+				<h3 class="veg-name">【沱沱工社】 有机迷你冬瓜 约1000-1500g/份</h3>
+				<p class="veg-price"><strong>沱沱价</strong><span>￥33.80</span><em>/份</em></p>
+				<p class="veg-scope"><strong>配送至</strong><i></i></p>
+				<p class="veg-deliver"><span>发货地</span><span>北京</span></p>
+				<div class="veg-count">
+					<div>
+						<div class="count-visib">1</div>
+						<div class="count-ar">
+							<span class="add">+</span>
+							<span class="reduce">-</span>
+						</div>
+					</div>
+					<a href="javascript:;">
+						<span></span>
+						加入购物车
+					</a>
+				</div>
+				<!--<script>
+				
+				</script>-->
+				<strong class="veg-enjoy"><a class="enjoy" href=""></a><span>分享</span><a class="xl" href=""></a><a class="qq" href=""></a><a class="qqwb" href=""></a><a class="rr" href=""></a><a class="wx" href=""></a></strong>
+			</div>
+			
+			<div class="veg-kinds-right">
+				<div class="veg-sev">
+					<dl class="veg-sev1">
+						<dt></dt>
+						<dd>全程品控</dd>
+					</dl>
+					<dl class="veg-sev2">
+						<dt></dt>
+						<dd>冷链配送</dd>
+					</dl>
+					<dl class="veg-sev3">
+						<dt></dt>
+						<dd>售后保障</dd>
+					</dl>
+				</div>
+				<div class="fresh-info">
+					<p>品牌：<a href="../index.html">沱沱工社</a></p>
+					<p>当前存储温度：0-4度</p>
+				</div>
+				<div class="eval">
+					<span>好评度</span><strong></strong><i>97%</i>
+				</div>
+				<div class="comment">
+					<div class="c-top"></div>
+					<div class="c-content">
+						<ul class="c-content-info">
+							<li><span>xushting:</span><span>很好，味道不错，买了很多次</spa n></li>
+							<li><span>沱沱沱沱陀:</span><span>一如既往的好</span></li>
+							<li><span>齐子:</span><span>好好好好好</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="veg-info">
+			<div class="veg-info-left">
+				<div class="veg-classify">
+					<p>相关分类</p>
+					<div>
+						<a href="">有机蔬菜</a>
+						<a href="">地方特产蔬菜</a>
+						<a href="">沱沱农场自产蔬菜</a>
+					</div>
+				</div>
+				<div class="other-info">
+					<div class="veg-others">
+						<p>看了这个的人还看了</p>
+						<div class="others-look"></div>
+					</div>
+					<div class="veg-buy">
+						<p>买了这个的人还看了</p>
+						<div class="others-buy"></div>
+					</div>
+					<div class="veg-like">
+						<p>买了这个的人还买了</p>
+						<div class="others-like"></div>
+					</div>
+				</div>
+				<div class="tuo-download">
+					<img src="../img/f0795a1a5b1f6f365258fca3257d64e0.jpg"/>
+				</div>
+			</div>
+			<div class="veg-info-right">
+				<ul class="veg-info-nav">
+					<li class="info-select">商品详情</li>
+					<li>购买评论（405）</li>
+				</ul>
+				<div class="info">
+					<div class="goods-info">
+						<ul class="tuotuo-info">
+							<li>品牌：沱沱工社</li>
+							<li>规格：约1000-1500/份</li>
+							<li>产地：北京市</li>
+							<li>建议储藏方法：冷藏存储</li>
+							<li>当前存储温度：0-4度</li>
+	
+						</ul>
+						<div class="goods-img"></div>
+					</div>
+					<div class="esti-info">
+						<div class="esti-user">
+							<p>用户评论</p>
+							<ul class="esti-percent">
+								<li class="esti-percent1">
+									<p class="esti-numb">97%</p>
+									<p>好评度</p>
+								</li>
+								<li class="esti-percent2">
+									<p class="good"><span>好评</span><strong></strong><i>97%</i></p>
+									<p class="middle"><span>中评</span><strong></strong><i>2%</i></p>
+									<p class="bad"><span>差评</span><strong></strong><i>1%</i></p>
+								</li>
+								<li class="esti-percent3">
+									<p>购买此商品，订单签收后即可发表评论，成功发表一条评论，即获10积分！</p>
+									<p><a class="esti-looks" href="">查看全部评论&gt;&gt;</a></p>
+									<p><a class="esti-self" href="">我要评论</a></p>
+								</li>
+							</ul>
+						</div>
+						<ul class="esti-classtify">
+							<li>全部评论（406）</li>
+							<li>好评（393）</li>
+							<li>中评（9）</li>
+							<li>差评（4）</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!------------------------------bottom-------------------------------->
+		<div class="bottom"></div>
+		<script>
+			$(".bottom").load("common.html .bottom");
+		</script>
+		<!--------------------------------links-------------------------------->
+		<div class="links">
+			<div class="severse">
+				<ul>
+					<li class="font-style">食品安全</li>
+					<li>自营沱沱有机农场</li>
+					<li>沱沱公社采购标准</li>
+					<li>透明社区经营理念</li>
+					<li>我们的资质</li>
+				</ul>
+				<ul>
+					<li class="font-style">新手教程</li>
+					<li>购物流程</li>
+					<li>注册登陆</li>
+					<li>账户充值</li>
+					<li>如何提货</li>
+					<li>会员政策</li>
+					
+				</ul>
+				<ul>
+					<li class="font-style">配送方式</li>
+					<li>配送范围</li>
+					<li>运费标准</li>
+					
+				</ul>
+				<ul>
+					<li class="font-style">支付方式</li>
+					<li>在线支付</li>
+					<li>账户余额支付</li>
+					<li>多种福利卡</li>
+					
+				</ul>
+				<ul>
+					<li class="font-style">售后服务</li>
+					<li>退换货政策</li>
+					<li>退换货流程</li>
+					<li>退款</li>
+					<li>投诉建议</li>
+				</ul>
+				<ul>
+					<li class="font-style">帮助信息</li>
+					<li>安全食品采购指南</li>
+					<li>常见问题</li>
+					<li>电子优惠券的使用</li>
+					<li>礼品卡</li>
+				</ul>
+				<div class="download">
+					<span>客户端下载</span>
+					<img src="../img/down_m.png"/>
+					<p></p>
+				</div>
+				<div class="download action">
+					<span>关注沱沱微信</span>
+					<img src="../img/weixian_er.png"/>
+					<p></p>
+				</div>
+			</div>
+			<div class="about"></div>
+		</div>
+		<!----------------------------加载about元素-->
+		<script>
+			$(".about").load("common.html #about");
+		</script>
+		<!-------------------------------------------------floor------------------------------------>
+		<ul class="floor">
+			<li><a class="floor1" href="shopcart.html">购物车<span></span></a></li>
+			<li><a class="floor2" href="">提货</a></li>
+			<li><a class="floor3" style="height:37px;padding-top:33px;" href="">礼品卡<br/>充值</a></li>
+			<li><a class="floor4" href="">问题反馈</a></li>
+			<li><a class="floor5" href="">在线客服</a></li>
+			<li><a class="floor6" style="height:36px;padding:0" href="javascript:;"></a></li>
+		</ul>
+	</body>
+</html>
